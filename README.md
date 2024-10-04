@@ -32,7 +32,7 @@ This Laravel project demonstrates the integration of **Elasticsearch** for advan
 
 To get started, make sure you have the following installed on your system:
 
-- **PHP 8.x**
+- **PHP 7.3** or PHP 7.4**
 - **Composer**
 - **MySQL** or another compatible database
 - **Node.js** (for frontend dependencies if needed)
