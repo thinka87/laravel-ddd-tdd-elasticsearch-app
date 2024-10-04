@@ -5,15 +5,15 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
-        "php": "^7.3|^8.0",
-        "elasticsearch/elasticsearch": "7.11",
+        "php": "^8.0",
+        "elasticsearch/elasticsearch": "^7.12",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.75",
         "laravel/sanctum": "^2.11",
         "laravel/scout": "^9.8",
         "laravel/tinker": "^2.5",
-        "matchish/laravel-scout-elasticsearch": "^4.0",
+        "matchish/laravel-scout-elasticsearch": "5.0",
         "tamayo/laravel-scout-elastic": "^8.1"
     },
     "require-dev": {
