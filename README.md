@@ -91,7 +91,7 @@ DB_PASSWORD=your_database_password
 ### Run Database Migrations
 ```bash
 php artisan migrate
-php artisan db:seed
+
 ```
 
 ### Running Elasticsearch
