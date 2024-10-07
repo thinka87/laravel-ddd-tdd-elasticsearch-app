@@ -32,7 +32,7 @@ This Laravel project demonstrates the integration of **Elasticsearch** for advan
 
 To get started, make sure you have the following installed on your system:
 
-- **PHP 7.3** or PHP 7.4**
+- **PHP 8
 - **Composer**
 - **MySQL** or another compatible database
 - **Node.js** (for frontend dependencies if needed)
@@ -66,6 +66,40 @@ Run the following commands to install PHP and Node.js dependencies:
 composer install
 npm install
 ```
+### Installing Dependencies
+
+Run the following commands to install PHP and Node.js dependencies:
+
+```bash
+composer install
+npm install
+```
+### Generate the Application Key
+
+Laravel requires an encryption key, which is stored in the .env file under the APP_KEY variable. 
+Generate this key using the following Artisan command:
+
+```bash
+php artisan key:generate
+```
+
+### Setting Up the Database
+
+Next, configure the database connection in the .env file. Open the file and locate the DB_ section to update your MySQL credentials. It should look something like this:
+
+```bash
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=your_database_name
+DB_USERNAME=your_database_username
+DB_PASSWORD=your_database_password
+```
+### Run Database Migrations
+```bash
+php artisan migrate
+php artisan db:seed
+```
 
 ### Running Elasticsearch
 
@@ -73,14 +107,6 @@ Ensure that Elasticsearch is running locally. You can use Docker to start an Ela
 
 ```bash
 docker run -p 9200:9200 -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:7.11.0
-```
-
-### Setting Up the Database
-
-Run the migrations and seed the database:
-
-```bash
-php artisan migrate --seed
 ```
 
 ## Configuration
