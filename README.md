@@ -66,14 +66,7 @@ Run the following commands to install PHP and Node.js dependencies:
 composer install
 npm install
 ```
-### Installing Dependencies
 
-Run the following commands to install PHP and Node.js dependencies:
-
-```bash
-composer install
-npm install
-```
 ### Generate the Application Key
 
 Laravel requires an encryption key, which is stored in the .env file under the APP_KEY variable. 
