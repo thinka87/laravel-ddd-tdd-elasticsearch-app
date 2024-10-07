@@ -114,16 +114,6 @@ ELASTICSEARCH_HOST=localhost:9200
 ELASTICSEARCH_INDEX=products_index
 ```
 
-Ensure that the database credentials are also set correctly in your `.env` file:
-
-```env
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=your_database_name
-DB_USERNAME=your_username
-DB_PASSWORD=your_password
-```
 
 ### Elasticsearch Configuration
 
